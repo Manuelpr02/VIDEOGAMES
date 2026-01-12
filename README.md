@@ -29,8 +29,8 @@
 * **Jugar Online:** [[Link a Itch.io / Web](TU_URL_AQUÍ)](https://manuelpr02.itch.io/pong?secret=XbXSwZS8d58AY1PAyuV8gHaoNQ)
   
 ## 📂 Cómo probar los juegos
-1. Descarga el archivo `.zip`.
-2. Descomprime el contenido.
+1. Descarga el archivo.
+2. Instalalo en Godot.
 3. Ejecuta el archivo ejecutable incluido para disfrutar de la experiencia.
 
 ---
