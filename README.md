@@ -15,7 +15,7 @@
 
 ## 🛠️ Stack Tecnológico en Game Dev
 **Motor Principal:** Godot Engine.
-**Lenguajes:** GDScript, C++, C# y Python.
+**Lenguajes:** GDScript y JavaScript.
 **Especialización:** Actualmente cursando el curso de **Videojuegos 2D/3D y Realidad Virtual** en el IES Trasierra.
 
 ---
