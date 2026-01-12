@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ds3mqcphf6kye"]
+
+[ext_resource type="Script" uid="uid://cge2w100x4g1q" path="res://scripts/ball_ai.gd" id="1_j3pqs"]
+[ext_resource type="Texture2D" uid="uid://b3tdmaoxq6bep" path="res://assets/Ball2.png" id="2_j3pqs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rfifr"]
+radius = 13.0
+
+[node name="Ball" type="CharacterBody2D"]
+collision_layer = 2
+motion_mode = 1
+floor_constant_speed = true
+floor_block_on_wall = false
+script = ExtResource("1_j3pqs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(0, -4.76837e-07)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_j3pqs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_rfifr")

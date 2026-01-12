@@ -1,0 +1,59 @@
+[gd_scene load_steps=10 format=3 uid="uid://bwyc0jbak3c6s"]
+
+[ext_resource type="Script" uid="uid://dksdgahpbk747" path="res://scripts/level.gd" id="1_1exlk"]
+[ext_resource type="PackedScene" uid="uid://b1jicjrct1yrv" path="res://scenes/paddle.tscn" id="1_ll22d"]
+[ext_resource type="PackedScene" uid="uid://be35w3b5do0sx" path="res://scenes/ball.tscn" id="2_nj764"]
+[ext_resource type="Texture2D" uid="uid://c0rlyjpu67hrg" path="res://assets/Fondo.jpg" id="4_2r41h"]
+[ext_resource type="PackedScene" uid="uid://ds3mqcphf6kye" path="res://scenes/ball_ai.tscn" id="6_2r41h"]
+[ext_resource type="PackedScene" uid="uid://e8h3cp35r0f8" path="res://scenes/paddle_ia.tscn" id="6_klq6b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tg0xg"]
+size = Vector2(1164, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gl0tk"]
+size = Vector2(20, 669)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4odxf"]
+size = Vector2(20, 672)
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_1exlk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(572, 324)
+
+[node name="Walls" type="StaticBody2D" parent="."]
+
+[node name="Ceiling" type="CollisionShape2D" parent="Walls"]
+position = Vector2(573, -13)
+shape = SubResource("RectangleShape2D_tg0xg")
+
+[node name="Ceiling2" type="CollisionShape2D" parent="Walls"]
+position = Vector2(578, 663)
+shape = SubResource("RectangleShape2D_tg0xg")
+
+[node name="Right Wall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(1160, 325)
+shape = SubResource("RectangleShape2D_gl0tk")
+
+[node name="LeftWall" type="CollisionShape2D" parent="Walls"]
+position = Vector2(-15, 327)
+shape = SubResource("RectangleShape2D_4odxf")
+
+[node name="Paddle" parent="." instance=ExtResource("1_ll22d")]
+position = Vector2(570, 627)
+
+[node name="Ball" parent="." instance=ExtResource("2_nj764")]
+position = Vector2(641, 440)
+
+[node name="0f0f0378-e0Cc-4f27-aa82-be980337a7e4" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(561, 354)
+scale = Vector2(1.2960949, 0.92635643)
+texture = ExtResource("4_2r41h")
+
+[node name="Ball2" parent="." instance=ExtResource("6_2r41h")]
+position = Vector2(436, 186)
+
+[node name="Paddle2" parent="." instance=ExtResource("6_klq6b")]
+position = Vector2(542, 25)
