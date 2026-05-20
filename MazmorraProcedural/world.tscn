@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dwxr4f0sapncj"]
+
+[ext_resource type="Texture2D" uid="uid://ia77hp5yh5yy" path="res://atlas.png" id="1_f3sb7"]
+[ext_resource type="Script" uid="uid://da8txyvomifrv" path="res://dungeon_generator.gd" id="2_fj7yv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fj7yv"]
+texture = ExtResource("1_f3sb7")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_tlwt5"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_fj7yv")
+
+[node name="World" type="Node2D" unique_id=1003916095]
+
+[node name="Dungeon" type="TileMapLayer" parent="." unique_id=1354724271]
+tile_set = SubResource("TileSet_tlwt5")
+script = ExtResource("2_fj7yv")
+map_width = 100
+map_height = 60
+min_number_of_rooms = 13
+max_number_of_rooms = 36
+min_room_size = 10
+max_room_size = 32
+bigger_corridor = true

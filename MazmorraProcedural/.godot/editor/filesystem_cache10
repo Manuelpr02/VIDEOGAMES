@@ -1,0 +1,14 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1778080610
+atlas.png::CompressedTexture2D::563511230508705272::1778079889::1778079894::1::::<><><>0<>0<>dc1d6d700d7e729f8c208ef8cfe4bcf0<>res://.godot/imported/atlas.png-7b6d701721d40511b9cfca52325841a7.ctex::
+export_presets.cfg::TextFile::-1::1778080610::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::5569386360616629980::1778079722::1778079727::1::::<><><>0<>0<>831e00f55edef0e83460cdc36991648d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+niblo.png::CompressedTexture2D::1212974121886062007::1778080142::1778080142::1::::<><><>0<>0<>f2887e09ab44914c77196c7097f1cff6<>res://.godot/imported/niblo.png-341a51f8f499f2122a1f652c1b6e9f4f.ctex::
+player.tscn::PackedScene::803594038956735176::1778080233::0::1::::<><><>0<>0<><>::uid://rjtrhuhmkjt4::::res://niblo.png<>uid://dit4f4aka5vpm::::res://player.gd
+player.gd::GDScript::7761767222903162254::1778080233::0::1::::<>CharacterBody2D<><>0<>0<><>::
+dungeon_generator.gd::GDScript::7228582506739400171::1778080280::0::1::::<>TileMapLayer<><>0<>0<><>::
+world.tscn::PackedScene::8751981578414965753::1778080449::0::1::::<><><>0<>0<><>::uid://ia77hp5yh5yy::::res://atlas.png<>uid://da8txyvomifrv::::res://dungeon_generator.gd
+::res://index/::1778080633
+index.apple-touch-icon.png::CompressedTexture2D::9178716843826237966::1778080609::1778080639::1::::<><><>0<>0<>28723a8c7e9dac165bc3e36ba44bdb2c<>res://.godot/imported/index.apple-touch-icon.png-7b995845c0a478c87d24a0118989ba83.ctex::
+index.icon.png::CompressedTexture2D::3560702865060098065::1778080609::1778080639::1::::<><><>0<>0<>7f6225ec462aeafab1860e8d210d919c<>res://.godot/imported/index.icon.png-9b91fe2628993b35c8d82c5ec7ac5d53.ctex::
+index.png::CompressedTexture2D::4768331307221845336::1778080609::1778080639::1::::<><><>0<>0<>9e034a65c1ee8acfba143e8933429672<>res://.godot/imported/index.png-d646afb8957734b59142c2e7c2ce3eb2.ctex::
