@@ -1,0 +1,5 @@
+res://MainScene.tscn
+res://enemigo.gd
+res://manzana.gd
+res://pocima.gd
+res://personaje.gd
