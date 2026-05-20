@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqdgoc0dgv86n"]
+
+[ext_resource type="Script" uid="uid://bjuuq73uxr2un" path="res://bala.gd" id="1_ag3k0"]
+[ext_resource type="Texture2D" uid="uid://cenyha7f5j0hy" path="res://bala_jugador.png" id="1_jk513"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jk513"]
+size = Vector2(8, 16)
+
+[node name="Bala" type="Area2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_ag3k0")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_jk513")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jk513")

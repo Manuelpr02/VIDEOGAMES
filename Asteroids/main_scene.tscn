@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://c66jrm3abrdhq"]
+
+[ext_resource type="PackedScene" uid="uid://dhli0d22cbax0" path="res://jugador.tscn" id="1_0f027"]
+[ext_resource type="Script" uid="uid://0kobcgk6ucp" path="res://main_scene.gd" id="1_2c62f"]
+[ext_resource type="PackedScene" uid="uid://bk3fajaqq0l5r" path="res://enemigo.tscn" id="3_gyfs4"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_2c62f")
+
+[node name="Jugador" parent="." instance=ExtResource("1_0f027")]
+position = Vector2(640, 641)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="LabelJugador" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Puntuacion Jugador"
+
+[node name="LabelIA" type="Label" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "Puntuacion IA"
+
+[node name="Enemigo" parent="." instance=ExtResource("3_gyfs4")]
+position = Vector2(130, 86)
+
+[node name="Enemigo2" parent="." instance=ExtResource("3_gyfs4")]
+position = Vector2(1194, 83)
