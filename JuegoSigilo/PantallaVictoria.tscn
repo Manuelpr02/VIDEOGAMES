@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://dwuex5werqir7"]
+
+[ext_resource type="Script" uid="uid://c8bn17n8rqqdp" path="res://pantalla_victoria.gd" id="1_eejsw"]
+[ext_resource type="AudioStream" uid="uid://bvmcouhwale5j" path="res://paulyudin-winner-epic-157062.mp3" id="2_wi6m6"]
+
+[node name="PantallaVictoria" type="Control" unique_id=205068202]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_eejsw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=82627179]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 41.071426
+offset_bottom = 41.852676
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(31.92, 17.92)
+color = Color(0.26666668, 0.39607844, 0.8235294, 1)
+
+[node name="Titulo" type="Label" parent="." unique_id=1424698401]
+layout_mode = 0
+offset_left = 241.0
+offset_top = 72.0
+offset_right = 1120.0
+offset_bottom = 141.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "¡ HAS ESCAPADO DE LA MAZMORRA !"
+
+[node name="ResultadoTiempo" type="Label" parent="." unique_id=132963835]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 285.0
+offset_right = 277.0
+offset_bottom = 308.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="ResultadoPuntos" type="Label" parent="." unique_id=1962333631]
+layout_mode = 0
+offset_left = 868.0
+offset_top = 285.0
+offset_right = 908.0
+offset_bottom = 308.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1155726876]
+layout_mode = 0
+offset_left = 553.0
+offset_top = 379.0
+offset_right = 677.0
+offset_bottom = 445.0
+
+[node name="BotonReiniciar" type="Button" parent="VBoxContainer" unique_id=1184676012]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Jugar de nuevo"
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=559447549]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Cerrar Juego"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=613359102]
+stream = ExtResource("2_wi6m6")
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/BotonReiniciar" to="." method="_on_boton_reiniciar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

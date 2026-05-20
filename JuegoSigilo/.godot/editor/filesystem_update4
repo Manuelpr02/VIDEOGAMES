@@ -1,0 +1,6 @@
+res://main_scene.tscn
+res://character_body_2d.gd
+res://pantalla_inicial.tscn
+res://pantalla_inicial.gd
+res://PantallaVictoria.tscn
+res://pantalla_victoria.gd

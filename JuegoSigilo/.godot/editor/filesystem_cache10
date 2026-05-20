@@ -1,0 +1,82 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1774457976
+alexis_gaming_cam-item-collected-1-367087.mp3::AudioStreamMP3::6743479118756875668::1773857806::1773857806::1::::<><><>0<>0<>c7b4c6c8e02a0c869ed3bf05bd561f4b<>res://.godot/imported/alexis_gaming_cam-item-collected-1-367087.mp3-7dbb5a9b8989a89fac4c2c04beb74907.mp3str::
+bandera.gd::GDScript::2718425313223806752::1773859297::0::1::::<>Area2D<><>0<>0<><>::
+character_body_2d.gd::GDScript::4023572915777549654::1774457281::0::1::::<>CharacterBody2D<><>0<>0<><>::
+coleccionable.gd::GDScript::3829598333199071130::1773858003::0::1::::<>Area2D<><>0<>0<><>::
+emmraan-apocalypse-254123.mp3::AudioStreamMP3::3387298269829681941::1773857642::1774455307::1::::<><><>0<>0<>664c66417b4def91893023e6b9b915eb<>res://.godot/imported/emmraan-apocalypse-254123.mp3-2e2b81bdb2a03d84cb4d38fdd52d8530.mp3str::
+enemigo_1.gd::GDScript::3958667166699122522::1773854771::0::1::::<>CharacterBody2D<><>0<>0<><>::
+enemigo_2.gd::GDScript::4627100868383833929::1773854357::0::1::::<>CharacterBody2D<><>0<>0<><>::
+enemigo_3.gd::GDScript::9158451218384725857::1773855353::0::1::::<>CharacterBody2D<><>0<>0<><>::
+enemigo_5.gd::GDScript::7591625603287399363::1773855145::0::1::::<>CharacterBody2D<><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1774457976::0::1::::<><><>0<>0<><>::
+freesound_community-suspenseful-music-27581.mp3::AudioStreamMP3::1947810764725873549::1774454945::1774455313::1::::<><><>0<>0<>1f5ccc5045cf2d6fe7245aaaf8da8701<>res://.godot/imported/freesound_community-suspenseful-music-27581.mp3-90b18cddfc5effb7a8af24dae2d2699e.mp3str::
+Global.gd::GDScript::6078263833707375191::1773859424::0::1::::<>Node<><>0<>0<><>::
+icon.svg::CompressedTexture2D::962420955300042957::1773248185::1773248190::1::::<><><>0<>0<>63abf3c9d5152214d07eaddd7051172c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main_scene.tscn::PackedScene::2868688174943566284::1774457281::0::1::::<><><>0<>0<><>::uid://ccv8188g6tfu0::::res://Robot Warfare Asset Pack 22-11-24/Tileset/tileset_arranged.png<>uid://djbou8kikw01k::::res://Robot Warfare Asset Pack 22-11-24/Soldiers/Assault-Class.png<>uid://bxlbwmy3vprf7::::res://character_body_2d.gd<>uid://h5ntxive6u5a::::res://Robot Warfare Asset Pack 22-11-24/Robots/Spider.png<>uid://bk7lkc12i8atm::::res://Robot Warfare Asset Pack 22-11-24/Soldiers/SquadLeader.png<>uid://bwnuw1mpoht51::::res://enemigo_1.gd<>uid://bk5rwmc16fshr::::res://Robot Warfare Asset Pack 22-11-24/Robots/Scarab.png<>uid://vpoktonltcc4::::res://Robot Warfare Asset Pack 22-11-24/Obstacles and Objects/obstacles-and-objects.png<>uid://btgf0lky26god::::res://Robot Warfare Asset Pack 22-11-24/UI/health-bars.png<>uid://bngetprbbluv0::::res://Robot Warfare Asset Pack 22-11-24/Robots/Wasp.png<>uid://d3qomav8hjanp::::res://enemigo_3.gd<>uid://dgfo72ad4khx0::::res://enemigo_5.gd<>uid://b66nw7u8p8afh::::res://enemigo_2.gd<>uid://butc6plvshylm::::res://coleccionable.gd<>uid://31y3waaq4wqf::::res://Robot Warfare Asset Pack 22-11-24/UI/squad-insignia.png<>uid://c3cud66oi1c65::::res://alexis_gaming_cam-item-collected-1-367087.mp3<>uid://20sfnqglloth::::res://freesound_community-suspenseful-music-27581.mp3<>uid://bey3ckkr6mvr1::::res://bandera.gd<>uid://cnp14yw5tx8q1::::res://Robot Warfare Asset Pack 22-11-24/UI/objective-flag.png
+PantallaVictoria.tscn::PackedScene::8744989717319389202::1774457761::0::1::::<><><>0<>0<><>::uid://c8bn17n8rqqdp::::res://pantalla_victoria.gd<>uid://bvmcouhwale5j::::res://paulyudin-winner-epic-157062.mp3
+pantalla_victoria.gd::GDScript::7091975039095218085::1774455990::0::1::::<>Control<><>0<>0<><>::
+pantalla_inicial.tscn::PackedScene::548604696061851294::1774457955::0::1::::<><><>0<>0<><>::uid://b7ycw3p0w2yla::::res://pantalla_inicial.gd<>uid://boi3kpupfo51j::::res://emmraan-apocalypse-254123.mp3
+pantalla_inicial.gd::GDScript::4682170962651257198::1774454307::0::1::::<>Control<><>0<>0<><>::
+paulyudin-winner-epic-157062.mp3::AudioStreamMP3::3885306430521351021::1774456325::1774456335::1::::<><><>0<>0<>2e0065f2cf84296e1a9e1ab9299349c2<>res://.godot/imported/paulyudin-winner-epic-157062.mp3-90dd1e521fa859ad8d972a9429473a33.mp3str::
+::res://Index/::1774457982
+index.apple-touch-icon.png::CompressedTexture2D::5935372603894952114::1774457976::1774458220::1::::<><><>0<>0<>252e45ecc8e557bb72619d17010073de<>res://.godot/imported/index.apple-touch-icon.png-3524cb5461032833f4b4a3a4ab36e76d.ctex::
+index.icon.png::CompressedTexture2D::6330199217995958714::1774457976::1774458220::1::::<><><>0<>0<>c562a0cd748bffc3a31263edae1eeb93<>res://.godot/imported/index.icon.png-13b4793a6ba9a45bb7630748c3f01e82.ctex::
+index.png::CompressedTexture2D::2579613042502856091::1774457976::1774458221::1::::<><><>0<>0<>2dc655847fe914ce9c611f8731ca0924<>res://.godot/imported/index.png-784f9bcff133899d0461bba7d7ba755d.ctex::
+::res://Robot Warfare Asset Pack 22-11-24/::1773248261
+License.txt::TextFile::-1::1773248260::0::1::::<><><>0<>0<><>::
+README.txt::TextFile::-1::1773248260::0::1::::<><><>0<>0<><>::
+::res://Robot Warfare Asset Pack 22-11-24/Effects/::1773248261
+big-explosion.png::CompressedTexture2D::5684001575023539973::1773248260::1773248261::1::::<><><>0<>0<>bde6554927deb1a8c0220713469c4fe1<>res://.godot/imported/big-explosion.png-dddb38aa98dafade454e26dede13cb03.ctex::
+big-fragments.png::CompressedTexture2D::6898666305014985859::1773248260::1773248261::1::::<><><>0<>0<>a8d00038c77ffa12f0b311466a0ce5ed<>res://.godot/imported/big-fragments.png-8f50d1762c7c60b03b3e07804d97c034.ctex::
+bullet-impacts.png::CompressedTexture2D::5082212101553348891::1773248260::1773248261::1::::<><><>0<>0<>bafd0c5ceac1cfffe47a9bd19f34f392<>res://.godot/imported/bullet-impacts.png-2097f9f8301568d3371da45e51dfe1fd.ctex::
+hit-sparks.png::CompressedTexture2D::5246335270965044902::1773248260::1773248261::1::::<><><>0<>0<>59a8d41a6b0acbe07ec1daa1cb3c3902<>res://.godot/imported/hit-sparks.png-f68e5ea96795fb32a6deb0ca432c53d3.ctex::
+hit-spatters.png::CompressedTexture2D::5411746498998254183::1773248260::1773248261::1::::<><><>0<>0<>0b9850802853fdddf68d10276a6e811d<>res://.godot/imported/hit-spatters.png-df90366dc55dfbd88fa62d5c39eaa6cb.ctex::
+laser-flash.png::CompressedTexture2D::3746401690272861809::1773248260::1773248261::1::::<><><>0<>0<>78a549c7585d86f7525edb0326d5698b<>res://.godot/imported/laser-flash.png-bf9f722916e64c21890ee6496e21423a.ctex::
+muzzle-flashes.png::CompressedTexture2D::3833146023046590439::1773248260::1773248261::1::::<><><>0<>0<>773aabdd03b3cb31a689e2097aaa3767<>res://.godot/imported/muzzle-flashes.png-db5e9165e71a3b98d86ce33a0a7282d7.ctex::
+small-explosion.png::CompressedTexture2D::7712364477731844281::1773248260::1773248261::1::::<><><>0<>0<>049a81a50f728fd4bb7e41dcfb22a0cb<>res://.godot/imported/small-explosion.png-cfca89e3935f73e91c7ad42aa45a7bb0.ctex::
+small-fragments.png::CompressedTexture2D::3606649728788197007::1773248260::1773248261::1::::<><><>0<>0<>5585732b67f74413cec01c477c229d8d<>res://.godot/imported/small-fragments.png-5fad980bc910a61379f81c1064d202fc.ctex::
+smoke.png::CompressedTexture2D::1511273880319951443::1773248260::1773248261::1::::<><><>0<>0<>9313460525634c73354f485fc9573a74<>res://.godot/imported/smoke.png-5af60b418ed476e45767d135e1eb335c.ctex::
+::res://Robot Warfare Asset Pack 22-11-24/Obstacles and Objects/::1773248261
+obstacles-and-objects.png::CompressedTexture2D::1505800298724380113::1773248260::1773248261::1::::<><><>0<>0<>e326a78d468bfa75f8571db21364ddc8<>res://.godot/imported/obstacles-and-objects.png-4c76394b70a1bf8f65c719b241f24e24.ctex::
+::res://Robot Warfare Asset Pack 22-11-24/Projectiles/::1773248261
+bullets+plasma.png::CompressedTexture2D::6955005054630199489::1773248260::1773248261::1::::<><><>0<>0<>a95e672823ca6fb0f85cbe125c1e30fd<>res://.godot/imported/bullets+plasma.png-b68ad03fa7e61eb46a0487727f198c8b.ctex::
+Grenade.png::CompressedTexture2D::4758255521348514073::1773248260::1773248261::1::::<><><>0<>0<>a7571e9f73fe5f5049f0b4bec0e8448c<>res://.godot/imported/Grenade.png-9fdfa7962cd80fa22e8ec782b6ff434c.ctex::
+RPG-round.png::CompressedTexture2D::5070316989493571630::1773248260::1773248261::1::::<><><>0<>0<>091edfa64f430eeb2947fc702f5764f7<>res://.godot/imported/RPG-round.png-8ef35e234baa82a502a4653b500dbd9c.ctex::
+::res://Robot Warfare Asset Pack 22-11-24/Robots/::1773248261
+Centipede.png::CompressedTexture2D::2177541951893024626::1773248260::1773248261::1::::<><><>0<>0<>8b742bb0d94715b086ecba5ce7511d95<>res://.godot/imported/Centipede.png-a617c047fa9573b518675b6148857d8f.ctex::
+Hornet.png::CompressedTexture2D::5718366978925327806::1773248260::1773248261::1::::<><><>0<>0<>efcbce16187681f64f2e4007d8873c10<>res://.godot/imported/Hornet.png-1e9494475f469f85dc5f3bf40c836ad0.ctex::
+Robot animation info.txt::TextFile::-1::1773248260::0::1::::<><><>0<>0<><>::
+Scarab.png::CompressedTexture2D::3151312563630931359::1773248260::1773248261::1::::<><><>0<>0<>9b93b708de97b7735ff2821e4943c08d<>res://.godot/imported/Scarab.png-7bd8f1b26be1278a8e962e04d675f641.ctex::
+Spider.png::CompressedTexture2D::554077710434397476::1773248260::1773248261::1::::<><><>0<>0<>1a9f3b8c2cfba7304119fcb979761fe6<>res://.godot/imported/Spider.png-425b77d0b15332e5f7cbecad166ae2c8.ctex::
+Wasp.png::CompressedTexture2D::3311539529726294779::1773248260::1773248261::1::::<><><>0<>0<>43f9268c6af271d6de9d9b5f8a6cad16<>res://.godot/imported/Wasp.png-95ec89e73329b67c93fdf276bc779d4e.ctex::
+::res://Robot Warfare Asset Pack 22-11-24/Soldiers/::1773248261
+AntiTank-Class.png::CompressedTexture2D::6806735798969291785::1773248260::1773248261::1::::<><><>0<>0<>cdc22d0d14ce7adf15db8cee09cb07f3<>res://.godot/imported/AntiTank-Class.png-07609a9372726a57eea96fcbbf7e48c3.ctex::
+Assault-Class.png::CompressedTexture2D::7793913524448822962::1773248260::1773248261::1::::<><><>0<>0<>b459f294ded958b084dead41e525c773<>res://.godot/imported/Assault-Class.png-5c4046193756a169fb452bcedc50087b.ctex::
+Grenadier-Class.png::CompressedTexture2D::2837156996519499991::1773248260::1773248261::1::::<><><>0<>0<>33a2b6aab5564ab6560fc6bf18dfaac0<>res://.godot/imported/Grenadier-Class.png-7c7b57b26928cbe4c60812fac3ebe3b5.ctex::
+MachineGunner-Class.png::CompressedTexture2D::4211930463361357443::1773248261::1773248261::1::::<><><>0<>0<>f90d6d0bb567f485493d4873da4b8b13<>res://.godot/imported/MachineGunner-Class.png-61e829677e55a2c6ba6168af6ff3e323.ctex::
+RadioOperator-Class.png::CompressedTexture2D::659459595561189525::1773248261::1773248261::1::::<><><>0<>0<>40a5be8164dde2db3e196e4006c6438b<>res://.godot/imported/RadioOperator-Class.png-3ff3d65e6d1319a60f4a85bc2f06bea6.ctex::
+Sniper-Class.png::CompressedTexture2D::7465219407384758973::1773248261::1773248261::1::::<><><>0<>0<>540d06fccc2a97ae835b6e7ed10b261a<>res://.godot/imported/Sniper-Class.png-f095844f6e5aee2fe6c1a0525725dd42.ctex::
+Soldier Animation Info.txt::TextFile::-1::1773248261::0::1::::<><><>0<>0<><>::
+SquadLeader.png::CompressedTexture2D::3155055099513177722::1773248261::1773248261::1::::<><><>0<>0<>c5274e3790416cb7dd2d79d3e3193637<>res://.godot/imported/SquadLeader.png-0a51dda1350de694b97f1bbb6a77985a.ctex::
+::res://Robot Warfare Asset Pack 22-11-24/Tileset/::1773248261
+tileset_arranged.png::CompressedTexture2D::4958622863464235485::1773248261::1773248261::1::::<><><>0<>0<>b7c7f04fc3e6dc41e7d2e8a41613b82e<>res://.godot/imported/tileset_arranged.png-8cbff23e1c20b7ef7bba88776e686738.ctex::
+tileset_compressed.png::CompressedTexture2D::8152741349399395982::1773248261::1773248261::1::::<><><>0<>0<>0c9b13ebeca67d21f614cadfe41a856f<>res://.godot/imported/tileset_compressed.png-a74ef0110bc3b3b74ab5f4c5e177fcdf.ctex::
+::res://Robot Warfare Asset Pack 22-11-24/UI/::1773248261
+dotted-arrows.png::CompressedTexture2D::2762907328026919184::1773248261::1773248261::1::::<><><>0<>0<>a5d47722489601035653403d052b8030<>res://.godot/imported/dotted-arrows.png-20883de9b6dbc0ca8e561c9b0065677a.ctex::
+health-bars.png::CompressedTexture2D::3732743803484182559::1773248261::1773248261::1::::<><><>0<>0<>c2f7b967a808f57328150bf12ad48f1a<>res://.godot/imported/health-bars.png-13d682462b74d7eeeb9e9f329ca582fa.ctex::
+icon-set.png::CompressedTexture2D::8769614438642129341::1773248261::1773248261::1::::<><><>0<>0<>de0db62a1c95681ac1b65ff68be8a75b<>res://.godot/imported/icon-set.png-d2f33117610bb330f2cb26709bad7533.ctex::
+mouse-pointer.png::CompressedTexture2D::1278340204335000289::1773248261::1773248261::1::::<><><>0<>0<>a0998fb56aff09d7c8c8e705f762c187<>res://.godot/imported/mouse-pointer.png-04cc9919c4d79c2ff3c998159be1ea4a.ctex::
+numbers.png::CompressedTexture2D::8098839464911417849::1773248261::1773248261::1::::<><><>0<>0<>5c727d5cde83fa2ff801c61f901994ad<>res://.godot/imported/numbers.png-4824a83aafb59ef18baae92734658fa2.ctex::
+objective-flag.png::CompressedTexture2D::5717893726762186214::1773248261::1773248261::1::::<><><>0<>0<>f21c05645138995132ad29594e6ef683<>res://.godot/imported/objective-flag.png-0508c35845224f16545e990d1348d0ed.ctex::
+objective-pulse.png::CompressedTexture2D::8060264662818409286::1773248261::1773248261::1::::<><><>0<>0<>9360c013f0a676bc0bc03e59072a0a71<>res://.godot/imported/objective-pulse.png-a61e8aa9babfcedc33e5eb16b2cab7a4.ctex::
+overhead-health-bars.png::CompressedTexture2D::654892919257573283::1773248261::1773248261::1::::<><><>0<>0<>39e63915647d841ca5440a68adfea1d3<>res://.godot/imported/overhead-health-bars.png-ce71c33722236f9fe6145d1dec423229.ctex::
+panel-frames.png::CompressedTexture2D::9060956547052778076::1773248261::1773248261::1::::<><><>0<>0<>0aff0b6115ceb5561405f973619ea122<>res://.godot/imported/panel-frames.png-3879de14fa7bbb2221fc58a77fe8faca.ctex::
+range-grid.png::CompressedTexture2D::4281548624954521231::1773248261::1773248261::1::::<><><>0<>0<>2463936087351d5fb6b5d09c9407dc19<>res://.godot/imported/range-grid.png-aae1bd6ec362068e6d5fdd4f8b2d10a8.ctex::
+selection-circles.png::CompressedTexture2D::8405529439452614135::1773248261::1773248261::1::::<><><>0<>0<>2a30b9ef378340f0b934c0de9be5bbbb<>res://.godot/imported/selection-circles.png-de8eb9f45d0802055aa61cfbc7223d1c.ctex::
+selection-cursor.png::CompressedTexture2D::1068355433126328299::1773248261::1773248261::1::::<><><>0<>0<>8cda8e6bd84e764ff076db5f0065a5f4<>res://.godot/imported/selection-cursor.png-a59885d602a5e824ccb4a3ffa33fb901.ctex::
+solid-arrows-thick.png::CompressedTexture2D::8603423781492292427::1773248261::1773248261::1::::<><><>0<>0<>c3d9eeeb281097b3be4029d4187310a6<>res://.godot/imported/solid-arrows-thick.png-185a63271aca378082fedf97fc638f68.ctex::
+solid-arrows-thin.png::CompressedTexture2D::8779172309239301456::1773248261::1773248261::1::::<><><>0<>0<>d36f6286efebe8b6a9549aa72f389a71<>res://.godot/imported/solid-arrows-thin.png-7c58ed4b891744f15edbf6ca71a4b582.ctex::
+squad-insignia.png::CompressedTexture2D::2020469809062443493::1773248261::1773248261::1::::<><><>0<>0<>3d5bbf7d924f42d0e25ca42b1406cd07<>res://.godot/imported/squad-insignia.png-744fc6039670ca7259fdead872f73780.ctex::
+target-cursor.png::CompressedTexture2D::2240033185758209339::1773248261::1773248261::1::::<><><>0<>0<>0958d2e6dc6a072d3b41915a2c9aebab<>res://.godot/imported/target-cursor.png-a8f0bddc9216da0eb981c309a2bbfd01.ctex::
+terrain-icons.png::CompressedTexture2D::6194623458341589440::1773248261::1773248261::1::::<><><>0<>0<>bcc34798035eda9ad3f4d294e4cc9c03<>res://.godot/imported/terrain-icons.png-f0b724618bf2c8fbbf238424731ac580.ctex::

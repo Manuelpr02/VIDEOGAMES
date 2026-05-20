@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://h20o6yaci3rm"]
+
+[ext_resource type="Script" uid="uid://b7ycw3p0w2yla" path="res://pantalla_inicial.gd" id="1_6hfic"]
+[ext_resource type="AudioStream" uid="uid://boi3kpupfo51j" path="res://emmraan-apocalypse-254123.mp3" id="2_3ed2k"]
+
+[node name="PantallaInicial" type="Control" unique_id=1713919875]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_6hfic")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1304384050]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1250.0
+offset_bottom = 685.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2677274, 0.39512706, 0.821781, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1194844679]
+layout_mode = 0
+offset_left = 529.0
+offset_top = 284.0
+offset_right = 652.0
+offset_bottom = 350.0
+scale = Vector2(1.48, 1.6000012)
+alignment = 1
+
+[node name="Iniciar" type="Button" parent="VBoxContainer" unique_id=2015028855]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "INICIAR JUEGO"
+
+[node name="Finalizar" type="Button" parent="VBoxContainer" unique_id=1572003529]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "CERRAR JUEGO"
+
+[node name="Titulo" type="Label" parent="." unique_id=181216701]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 146.0
+offset_right = 986.0
+offset_bottom = 215.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "¡ ESCAPA DE LA MAZMORRA !"
+
+[node name="Descripción y controles" type="Label" parent="." unique_id=801732360]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 449.0
+offset_right = 1210.0
+offset_bottom = 576.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+text = "Encuentra la salida de la mazmorra mientras huyes de los enemigos y coleccionas las 6 banderas que hay por el mapa en el menor tiempo posible
+                                                                      Si pierdes las tres vidas vuelves a empezar de 0. ¡Suerte!
+
+
+                                                                      Controles: Clickea con el ratón para moverte por el mapa"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1146558928]
+stream = ExtResource("2_3ed2k")
+volume_db = -8.077
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="VBoxContainer/Finalizar" to="." method="_on_finalizar_pressed"]
