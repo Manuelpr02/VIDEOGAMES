@@ -1,0 +1,11 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1778081518
+export_presets.cfg::TextFile::-1::1778081518::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::345825317894923696::1778080931::1778080937::1::::<><><>0<>0<>9366270560c6877f4ab2fef12c4332a8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+player.gd::GDScript::4152978057510574552::1778081259::0::1::::<>CharacterBody3D<><>0<>0<><>::
+terrain_generator.gd::GDScript::4645182515167534530::1778081335::0::1::::<>MultiMeshInstance3D<><>0<>0<><>::
+world.tscn::PackedScene::5970097305315464831::1778081410::0::1::::<><><>0<>0<><>::uid://b0fy7a1pn5npg::::res://player.gd<>uid://b7gfqh274we4y::::res://terrain_generator.gd
+::res://index/::1778081517
+index.apple-touch-icon.png::CompressedTexture2D::4599053340969706622::1778081517::1778081526::1::::<><><>0<>0<>cec6f6461e640494864ede4c43a3f3f0<>res://.godot/imported/index.apple-touch-icon.png-7b995845c0a478c87d24a0118989ba83.ctex::
+index.icon.png::CompressedTexture2D::4767156273895774503::1778081517::1778081526::1::::<><><>0<>0<>a3eb45545c85bda277b9e5ea3fa959f4<>res://.godot/imported/index.icon.png-9b91fe2628993b35c8d82c5ec7ac5d53.ctex::
+index.png::CompressedTexture2D::4819638209633978602::1778081517::1778081526::1::::<><><>0<>0<>198557aabf81355e60ff4957e3db6cce<>res://.godot/imported/index.png-d646afb8957734b59142c2e7c2ce3eb2.ctex::
