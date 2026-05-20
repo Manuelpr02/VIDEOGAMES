@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccoco0vfek8ex"]
+
+[ext_resource type="Script" uid="uid://bchupukdhwc" path="res://Coleccionables/coleccionable.gd" id="1_ojpxt"]
+[ext_resource type="Texture2D" uid="uid://bnjkdxcykgwiy" path="res://Imagenes/Regalo1 (1).png" id="2_ojpxt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ojpxt"]
+radius = 29.068884
+
+[node name="Coleccionable" type="Area2D"]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_ojpxt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.3333282, 3.3333359)
+scale = Vector2(0.2029703, 0.21326165)
+texture = ExtResource("2_ojpxt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.3333333)
+shape = SubResource("CircleShape2D_ojpxt")

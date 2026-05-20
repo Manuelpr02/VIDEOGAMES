@@ -1,0 +1,14 @@
+AudioStreamPlayer
+AnimationPlayer
+ColorRect
+CanvasLayer
+Node2D
+AnimatedSprite2D
+Label
+Button
+VBoxContainer
+Control
+TileMapLayer
+VideoStreamPlayer
+TextureRect
+CollisionShape2D

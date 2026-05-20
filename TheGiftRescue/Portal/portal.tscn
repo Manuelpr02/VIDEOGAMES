@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://c03lt2klaqaqn"]
+
+[ext_resource type="Script" uid="uid://b264k3404u7w3" path="res://Portal/portal.gd" id="1_hgvv3"]
+[ext_resource type="Texture2D" uid="uid://bq4yblphx8fyo" path="res://Imagenes/portales-removebg-preview.png" id="1_oixwc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgvv3"]
+atlas = ExtResource("1_oixwc")
+region = Rect2(0, 0, 50, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hptmh"]
+atlas = ExtResource("1_oixwc")
+region = Rect2(50, 0, 50, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vxgwi"]
+atlas = ExtResource("1_oixwc")
+region = Rect2(100, 0, 50, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4s5ei"]
+atlas = ExtResource("1_oixwc")
+region = Rect2(150, 0, 50, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k3w6y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgvv3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hptmh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vxgwi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4s5ei")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oixwc"]
+radius = 20.0
+height = 102.0
+
+[node name="Portal" type="Area2D"]
+scale = Vector2(0.7, 0.7)
+script = ExtResource("1_hgvv3")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_k3w6y")
+autoplay = "default"
+frame_progress = 0.9608451
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -11)
+shape = SubResource("CapsuleShape2D_oixwc")

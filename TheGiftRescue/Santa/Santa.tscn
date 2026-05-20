@@ -1,0 +1,118 @@
+[gd_scene load_steps=17 format=3 uid="uid://d0htkitcdsghp"]
+
+[ext_resource type="Script" uid="uid://drv1lnyf3wk4y" path="res://Santa/Santa.gd" id="1_yraty"]
+[ext_resource type="Texture2D" uid="uid://cwr6rw1tqtxrx" path="res://Imagenes/240_F_183204694_vzkLZcwZ2xupd6pmMMFozmb15uuuvwng.png" id="2_2elty"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffkpd"]
+atlas = ExtResource("2_2elty")
+region = Rect2(0, 0, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwvno"]
+atlas = ExtResource("2_2elty")
+region = Rect2(112, 0, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pq80l"]
+atlas = ExtResource("2_2elty")
+region = Rect2(224, 0, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27c5s"]
+atlas = ExtResource("2_2elty")
+region = Rect2(336, 0, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yag7m"]
+atlas = ExtResource("2_2elty")
+region = Rect2(448, 0, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gugg"]
+atlas = ExtResource("2_2elty")
+region = Rect2(560, 0, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogn1u"]
+atlas = ExtResource("2_2elty")
+region = Rect2(0, 120, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10lqt"]
+atlas = ExtResource("2_2elty")
+region = Rect2(112, 120, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lwtnd"]
+atlas = ExtResource("2_2elty")
+region = Rect2(224, 120, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irylq"]
+atlas = ExtResource("2_2elty")
+region = Rect2(336, 120, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kggut"]
+atlas = ExtResource("2_2elty")
+region = Rect2(448, 120, 112, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqlmc"]
+atlas = ExtResource("2_2elty")
+region = Rect2(560, 120, 112, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kqmbx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffkpd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pwvno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pq80l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27c5s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yag7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gugg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogn1u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10lqt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lwtnd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_irylq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kggut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lqlmc")
+}],
+"loop": true,
+"name": &"Normal",
+"speed": 15.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2elty"]
+radius = 16.0
+height = 42.666656
+
+[node name="Santa" type="CharacterBody2D"]
+position = Vector2(161, -13)
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_yraty")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-182.094, 184.34)
+scale = Vector2(0.4897738, 0.47233334)
+sprite_frames = SubResource("SpriteFrames_kqmbx")
+animation = &"Normal"
+autoplay = "Normal"
+frame_progress = 0.060250286
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-180.00002, 185.33334)
+shape = SubResource("CapsuleShape2D_2elty")

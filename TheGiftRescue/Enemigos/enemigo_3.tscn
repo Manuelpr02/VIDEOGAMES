@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ysupajegsu0a"]
+
+[ext_resource type="Script" uid="uid://c8fy6gv0amkwh" path="res://Enemigos/enemigo_4.gd" id="1_nve3y"]
+[ext_resource type="Texture2D" uid="uid://gojdx38a0pl5" path="res://Imagenes/enemigo1-removebg-preview.png" id="2_nve3y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nscx5"]
+size = Vector2(312.5, 450)
+
+[node name="Enemigo3" type="CharacterBody2D"]
+scale = Vector2(0.059881996, 0.06)
+script = ExtResource("1_nve3y")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_nve3y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6.25, 0)
+shape = SubResource("RectangleShape2D_nscx5")

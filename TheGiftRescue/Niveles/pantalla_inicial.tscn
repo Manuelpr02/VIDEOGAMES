@@ -1,0 +1,96 @@
+[gd_scene load_steps=7 format=3 uid="uid://bgderkeegc7t4"]
+
+[ext_resource type="Script" uid="uid://yl5wfibbhjcp" path="res://Niveles/pantalla_inicial.gd" id="1_xsigs"]
+[ext_resource type="AudioStream" uid="uid://bnwmwwlcum5cs" path="res://Musica/christmas-music-448322.mp3" id="2_26g00"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xsigs"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.6, 0.6, 0.92156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bujmu"]
+bg_color = Color(0.6296841, 0.43086177, 0.9904745, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_26g00"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.6, 0.6, 0.92156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jr6ww"]
+bg_color = Color(0.6313726, 0.43137255, 0.99215686, 1)
+
+[node name="PantallaInicial" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xsigs")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1504.0
+offset_bottom = 719.0
+color = Color(0.39607844, 0.9607843, 0.90588236, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 126.0
+offset_right = 1172.0
+offset_bottom = 209.0
+theme_override_colors/font_color = Color(0.92608964, 0, 0.216205, 1)
+theme_override_font_sizes/font_size = 60
+text = "¡ El Rescate de los Regalos !"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 537.0
+offset_right = 1227.0
+offset_bottom = 706.0
+theme_override_colors/font_color = Color(0.92608964, 0, 0.216205, 1)
+theme_override_font_sizes/font_size = 30
+text = "¡ Recupera los regalos perdidos 
+con Santa y gana puntos !"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
+offset_left = 652.0
+offset_top = 321.0
+offset_right = 841.0
+offset_bottom = 489.0
+scale = Vector2(1.2400012, 1)
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="Inicio" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.19215687, 0.13725491, 0.8745098, 1)
+theme_override_colors/font_hover_color = Color(0.4745098, 0.85882354, 1, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_xsigs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bujmu")
+text = "JUGAR"
+
+[node name="Cerrar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.19215687, 0.13725491, 0.8745098, 1)
+theme_override_colors/font_hover_color = Color(0.47560036, 0.8602528, 0.99999994, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_26g00")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jr6ww")
+text = "CERRAR"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_26g00")
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Inicio" to="." method="_on_inicio_pressed"]
+[connection signal="pressed" from="VBoxContainer/Cerrar" to="." method="_on_cerrar_pressed"]

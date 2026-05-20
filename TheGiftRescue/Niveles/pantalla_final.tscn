@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://p0x7mm1c75pc"]
+
+[ext_resource type="Script" uid="uid://b0h3s261xnwk1" path="res://Niveles/pantalla_final.gd" id="1_58ntk"]
+[ext_resource type="AudioStream" uid="uid://bh77suw475gky" path="res://Musica/victory-nomination-winner-champion-music-249655.mp3" id="2_cm5fo"]
+
+[sub_resource type="FontFile" id="FontFile_58ntk"]
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm5fo"]
+bg_color = Color(0.48403424, 0.509309, 0.72942805, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_58ntk"]
+bg_color = Color(0.66624284, 0.4705978, 1, 1)
+
+[node name="PantallaFinal" type="Node2D"]
+script = ExtResource("1_58ntk")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1502.0
+offset_bottom = 723.0
+color = Color(0.4415688, 0.82069904, 0.9227878, 1)
+
+[node name="Label1" type="Label" parent="CanvasLayer"]
+offset_left = 526.0
+offset_top = 16.0
+offset_right = 994.0
+offset_bottom = 268.0
+theme_override_colors/font_color = Color(1, 0.06999999, 0.08549976, 1)
+theme_override_font_sizes/font_size = 22
+text = "		THE END
+
+¡ MUCHAS GRACIAS POR JUGAR !"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelPuntos" type="Label" parent="CanvasLayer"]
+offset_left = 583.0
+offset_top = 269.0
+offset_right = 760.0
+offset_bottom = 300.0
+theme_override_colors/font_color = Color(1, 0.07058824, 0.08627451, 1)
+theme_override_font_sizes/font_size = 22
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+modulate = Color(0.906846, 0.8891812, 0.87689066, 1)
+self_modulate = Color(0.9523302, 0.8449054, 0.97731394, 1)
+offset_left = 651.0
+offset_top = 379.0
+offset_right = 870.0
+offset_bottom = 429.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.15840003, 0.99, 0.7405199, 1)
+theme_override_fonts/font = SubResource("FontFile_58ntk")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_cm5fo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_58ntk")
+text = "Volver al inicio"
+
+[node name="MusicaFondo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_cm5fo")
+autoplay = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

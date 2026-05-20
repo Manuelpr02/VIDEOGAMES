@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c72xqyq58dbrm"]
+
+[ext_resource type="Script" uid="uid://ce4c7rvm5ceg0" path="res://Coleccionables/coleccionable_2.gd" id="1_eqlj4"]
+[ext_resource type="Texture2D" uid="uid://wteq87wou5xu" path="res://Imagenes/Regalo2 (1).png" id="2_eqlj4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eqlj4"]
+radius = 26.925823
+
+[node name="Coleccionable2" type="Area2D"]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_eqlj4")
+amplitud = null
+velocidad_flotacion = null
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(6.541672, 4.2916613)
+scale = Vector2(0.203, 0.174)
+texture = ExtResource("2_eqlj4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6.6666665, 6.6666665)
+shape = SubResource("CircleShape2D_eqlj4")

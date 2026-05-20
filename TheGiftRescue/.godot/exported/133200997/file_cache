@@ -1,0 +1,15 @@
+res://Checkpoints/checkpoints.tscn::c2e1593f56b3c9a9fd14eee7c5a43e54::1768414797::res://.godot/exported/133200997/export-1ef2ffe414575036eae03aea38b572c9-checkpoints.scn
+res://Coleccionables/coleccionable.tscn::2a5c1f57a6a34bb0f4ecb0839427d755::1769013673::res://.godot/exported/133200997/export-052dcf808ab4a8c918d15c12085dd39e-coleccionable.scn
+res://Coleccionables/coleccionable_2.tscn::f80ebc771258d29289b18b1534015595::1769013841::res://.godot/exported/133200997/export-ea5dea5b2b442a827458c7a213f211c5-coleccionable_2.scn
+res://Coleccionables/coleccionable_3.tscn::6e351fbff1aa149ac39eb560fda38303::1769013944::res://.godot/exported/133200997/export-9fea395de547eef06178301fbbecae49-coleccionable_3.scn
+res://Controles/transicion.tscn::d0ff89a2b31256885b9592b188786850::1769106675::res://.godot/exported/133200997/export-1cd95b5f9d062761915eac5f4716ce3f-transicion.scn
+res://Enemigos/enemigo_1.tscn::32a9f68634ad558e159784a07df9c0df::1768841407::res://.godot/exported/133200997/export-46f914fd9efd5c00ee434361eee1cc14-enemigo_1.scn
+res://Enemigos/enemigo_2.tscn::a59f32a66e618d1ffdbb694c2fe24409::1768503867::res://.godot/exported/133200997/export-86c0895a2737c4eabeb11758041fb0cb-enemigo_2.scn
+res://Enemigos/enemigo_3.tscn::0f8224974db740687cc38db6ac05f050::1769104524::res://.godot/exported/133200997/export-cb61e278b28b65e5b40f27a0ee27b758-enemigo_3.scn
+res://Niveles/nivel_1.tscn::fbe85b1cb7f573624c01f439dbabeab8::1769109248::res://.godot/exported/133200997/export-36c5ab0369ec125619431781820d9335-nivel_1.scn
+res://Niveles/nivel_2.tscn::8781342600b24bd414ce79d89131eb7b::1769109283::res://.godot/exported/133200997/export-b85050b3e9d6e381cd8e6fdb4ea437dd-nivel_2.scn
+res://Niveles/nivel_3.tscn::2e65cd54edbfe43a0a9cc827e0e768fd::1769110164::res://.godot/exported/133200997/export-fb5646f227c26b667852169ba10b4632-nivel_3.scn
+res://Niveles/pantalla_final.tscn::f93acecf3dd1ce7bb62169d44abc72e0::1769104733::res://.godot/exported/133200997/export-90978e63327bfb623077f27aaf36b65e-pantalla_final.scn
+res://Niveles/pantalla_inicial.tscn::69daba09f8db79f331414e3982773b71::1769106754::res://.godot/exported/133200997/export-a4762c5f9cbac84d0b5ca3cae1512627-pantalla_inicial.scn
+res://Portal/portal.tscn::46df6b1b7d49d97c3368de419addc633::1768417060::res://.godot/exported/133200997/export-202f4e939efcd0fcbfcb60ff0ed6e5c4-portal.scn
+res://Santa/Santa.tscn::7967ae430c8ed8fa7ddcff712babc317::1769013710::res://.godot/exported/133200997/export-d542267479baefa731de84a45925f904-Santa.scn
