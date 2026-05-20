@@ -1,6 +1,6 @@
-🎮 My Videogames Vault (Godot Engine)
+🎮 My Videogames Vault (Godot Engine and Unity)
 
-¡Bienvenido a mi repositorio central de videojuegos! Aquí recopilo mis desarrollos creados con **Godot Engine**, explorando desde mecánicas clásicas hasta proyectos experimentales en 2D y 3D.
+¡Bienvenido a mi repositorio central de videojuegos! Aquí recopilo mis desarrollos creados con **Godot Engine y Unity**, explorando desde mecánicas clásicas hasta proyectos experimentales en 2D y 3D.
 
 ---
 
@@ -26,7 +26,9 @@
 | <img src="https://github.com/user-attachments/assets/07ba6d12-02e7-4422-ac80-1ce905962c06" width="150" /> | **Tiles** | Pruebas de diseño de niveles mediante el uso de Tilemaps y autotiling. | Godot (GDScript) | 🟧 Sin publicar |
 | <img src="https://github.com/user-attachments/assets/7fdfb4a8-94f8-446f-960e-f41d16174957" width="150" /> | **Waypoints1** | Lógica de patrullaje de enemigos y navegación mediante puntos de ruta. | Godot (GDScript) | 🟧 Sin publicar |
 | <img src="https://github.com/user-attachments/assets/9daa3a85-d1a8-4201-b183-c2712cb60e6d" width="150" /> | **Waypoints2** | Sistema de navegación avanzado o pathfinding siguiendo rutas dinámicas. | Godot (GDScript) | 🟧 Sin publicar |
-| <img src="https://github.com/user-attachments/assets/5088fa1e-9ce2-49d5-82af-9db1283f1ee5" width="150" /> | **¡Soldier Hunter!** | Proyecto de acción/disparos con dinámicas de combate. | Unity (C#) | ✅ Publicado |
+| <img src="https://github.com/user-attachments/assets/5088fa1e-9ce2-49d5-82af-9db1283f1ee5" width="150" /> | **¡Soldier Hunter!** | Proyecto de acción/disparos con dinámicas de combate. | Unity (C#) | ✅ Publicado | ## 
+| <img src="" width="150" /> | **BolosRV** | Sistema de navegación avanzado o pathfinding siguiendo rutas dinámicas. | Unity (C#) | 🟧 Sin publicar |
+| <img src="https://github.com/user-attachments/assets/c3a7f391-c78d-40d3-abde-36c69140a1b1" width="150" /> | **BaloncestoRA** | Proyecto de acción/disparos con dinámicas de combate. | Godot (GDScript) | 🟧 Sin publicar |
 
 ---
 
