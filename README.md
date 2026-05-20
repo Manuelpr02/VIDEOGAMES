@@ -66,7 +66,7 @@
 * **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/juegocoches?secret=lrC5NdDWenx1zK5oGsU0UMqaPDA)
 
 ### 🌀 Laberinto 3D
-* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/juegocoches?secret=lrC5NdDWenx1zK5oGsU0UMqaPDA)
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/laberinto3d?secret=uAufwtbRJENVBiJaX1yohjuS8)
 
 ### 🤖 MaquinaEstado1
 * **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/maquinaestado1?secret=WaXAHyHrqGkmBRf6PM89LiSqxnI)
