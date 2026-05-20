@@ -1,0 +1,14 @@
+Label
+AudioStreamPlayer2D
+VBoxContainer
+CollisionShape2D
+Area2D
+CanvasLayer
+Sprite2D
+CharacterBody2D
+RigidBody2D
+PathFollow2D
+Path2D
+Node2D
+StaticBody2D
+TileMapLayer
