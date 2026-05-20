@@ -10,10 +10,10 @@
 | :---: | :--- | :--- | :--- | :--- |
 | <img src="https://github.com/user-attachments/assets/56ed4fd7-d647-4872-b0fe-90e03e536f57" width="150" /> | **BREAKOUT** | El clásico de destruir ladrillos. Recreado para dominar la gestión de físicas y señales en Godot. | Godot (GDScript) | 🟧 Sin publicar |
 | <img src="https://github.com/user-attachments/assets/3df3d800-07d3-4ed4-a47f-c62637ec0758" width="150" /> | **PONG** | Mi primer proyecto en el motor, enfocado en la lógica de colisiones y movimiento de palas. | Godot (GDScript) | 🟧 Sin publicar |
-| <img src="URL_DE_TU_IMAGEN" width="150" /> | **Asteroids** | Recreación del mítico juego espacial de destruir meteoritos. | Godot (GDScript) | 🟧 Sin publicar |
-| <img src="URL_DE_TU_IMAGEN" width="150" /> | **Asteroids 2** | Evolución y segunda versión del prototipo de Asteroids con mejoras. | Godot (GDScript) | 🟧 Sin publicar |
-| <img src="URL_DE_TU_IMAGEN" width="150" /> | **Dungeon Looters** | Juego de exploración de mazmorras y recolección de tesoros. | Godot (GDScript) | ✅ Publicado |
-| <img src="URL_DE_TU_IMAGEN" width="150" /> | **JuegoCoches** | Prototipo de conducción y mecánicas de vehículos en 2D/3D. | Godot (GDScript) | 🟧 Sin publicar |
+| <img src="https://github.com/user-attachments/assets/09e2ca92-ee7f-4136-a132-33425cfa25ba" width="150" /> | **Asteroids** | Recreación del mítico juego espacial de destruir meteoritos. | Godot (GDScript) | 🟧 Sin publicar |
+| <img src="https://github.com/user-attachments/assets/d6160364-c4f5-4112-a409-f13d469ff189" width="150" /> | **Asteroids 2** | Evolución y segunda versión del prototipo de Asteroids con mejoras. | Godot (GDScript) | 🟧 Sin publicar |
+| <img src="https://github.com/user-attachments/assets/7db63439-4c9d-440c-b5b7-e7f8fd143c0f" width="150" /> | **Dungeon Looters** | Juego de exploración de mazmorras y recolección de tesoros. | Godot (GDScript) | ✅ Publicado |
+| <img src="https://github.com/user-attachments/assets/817480b5-3d35-4804-95e0-657c43709253" width="150" /> | **JuegoCoches** | Prototipo de conducción y mecánicas de vehículos en 2D/3D. | Godot (GDScript) | 🟧 Sin publicar |
 | <img src="URL_DE_TU_IMAGEN" width="150" /> | **Laberinto 3D** | Experimento de navegación y renderizado en entornos tridimensionales. | Godot (GDScript) | 🟧 Sin publicar |
 | <img src="URL_DE_TU_IMAGEN" width="150" /> | **MaquinaEstado1** | Proyecto técnico enfocado en la implementación de Máquinas de Estados Finitos (FSM). | Godot (GDScript) | 🟧 Sin publicar |
 | <img src="URL_DE_TU_IMAGEN" width="150" /> | **MaquinaEstado2** | Segunda iteración y refinamiento lógico de sistemas de estados. | Godot (GDScript) | 🟧 Sin publicar |
@@ -46,7 +46,7 @@
 * **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/pong?secret=XbXSwZS8d58AY1PAyuV8gHaoNQ)
 
 ### 🏰 Dungeon Looters
-* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/dungeonlooters))
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/dungeonlooters)
 
 ### 🎁 The Gift Rescue!
 * **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/thegiftrescue)
