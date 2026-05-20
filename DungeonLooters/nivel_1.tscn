@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://dxuv6jga5t2u0"]
+
+[ext_resource type="Texture2D" uid="uid://l8xurj2q3ifm" path="res://image.png" id="2_320mp"]
+[ext_resource type="Script" uid="uid://0ay8pqw82hky" path="res://tile_map_layer.gd" id="2_eciuy"]
+[ext_resource type="PackedScene" uid="uid://bjad1ab3kww7f" path="res://item.tscn" id="3_2lask"]
+[ext_resource type="PackedScene" uid="uid://cnkgi7ujegg8n" path="res://enemy.tscn" id="4_m2gv8"]
+[ext_resource type="PackedScene" uid="uid://ddwfxkmptq2gr" path="res://enemy_6.tscn" id="5_34yp4"]
+[ext_resource type="Script" uid="uid://byrvvikmhvdyi" path="res://v_box_container.gd" id="5_kd3qp"]
+[ext_resource type="Texture2D" uid="uid://2rrb3weec1vh" path="res://grp9WT-removebg-preview.png" id="6_kd3qp"]
+[ext_resource type="PackedScene" uid="uid://b212eg8klup5r" path="res://escaleras.tscn" id="6_vfns5"]
+[ext_resource type="PackedScene" uid="uid://tk1osc7movpv" path="res://tesoro.tscn" id="7_34yp4"]
+[ext_resource type="Script" uid="uid://cv4ih46tqoeer" path="res://time_label.gd" id="9_h0wtr"]
+[ext_resource type="Script" uid="uid://cl5h6bxd64hue" path="res://Minimap.gd" id="11_7ce3s"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h0wtr"]
+texture = ExtResource("2_320mp")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_320mp"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_h0wtr")
+
+[node name="Nivel1" type="Node2D" unique_id=981420019]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=224338678]
+tile_set = SubResource("TileSet_320mp")
+script = ExtResource("2_eciuy")
+item_scene = ExtResource("3_2lask")
+items_per_room = 1
+enemy_scene = ExtResource("4_m2gv8")
+enemy_2_scene = ExtResource("5_34yp4")
+stairs_scene = ExtResource("6_vfns5")
+treasure_scene = ExtResource("7_34yp4")
+next_level_scene = "uid://bbudfmhur0di"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1117076350]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=822474013]
+offset_right = 347.0
+offset_bottom = 428.0
+script = ExtResource("5_kd3qp")
+
+[node name="CorazonesContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=1434816884]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+
+[node name="CorazonTemplate" type="TextureRect" parent="CanvasLayer/VBoxContainer/CorazonesContainer" unique_id=834603071]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("6_kd3qp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=381356875]
+layout_mode = 2
+
+[node name="TreasureLabel" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=741089719]
+layout_mode = 2
+
+[node name="MessageLabel" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=749518590]
+layout_mode = 2
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=666921137]
+
+[node name="LevelLabel" type="Label" parent="CanvasLayer2" unique_id=184829994]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -53.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "Nivel 1"
+
+[node name="TimeLabel" type="Label" parent="CanvasLayer2" unique_id=1524833705]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+script = ExtResource("9_h0wtr")
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="." unique_id=1488407355]
+
+[node name="Control" type="Control" parent="CanvasLayer3" unique_id=1254316515 node_paths=PackedStringArray("tilemap")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 25.0
+offset_top = 154.0
+offset_right = 65.0
+offset_bottom = 194.0
+script = ExtResource("11_7ce3s")
+tilemap = NodePath("../../TileMapLayer")

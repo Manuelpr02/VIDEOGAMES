@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://dyheg4nqubhf2"]
+
+[ext_resource type="Texture2D" uid="uid://b7rgngbuj6ko1" path="res://image (2).png" id="1_turtx"]
+[ext_resource type="Script" uid="uid://0ay8pqw82hky" path="res://tile_map_layer.gd" id="2_alg0b"]
+[ext_resource type="PackedScene" uid="uid://bjad1ab3kww7f" path="res://item.tscn" id="3_30wi5"]
+[ext_resource type="PackedScene" uid="uid://d1673f0m356jy" path="res://enemy_3.tscn" id="4_63hhv"]
+[ext_resource type="PackedScene" uid="uid://dglvd8b6pr3iu" path="res://enemy_4.tscn" id="5_w66hf"]
+[ext_resource type="PackedScene" uid="uid://b212eg8klup5r" path="res://escaleras.tscn" id="6_5ipfx"]
+[ext_resource type="PackedScene" uid="uid://cj0e5lmek7e4o" path="res://tesoro_3.tscn" id="7_turtx"]
+[ext_resource type="PackedScene" uid="uid://jfiwcs570ki3" path="res://tesoro_4.tscn" id="8_alg0b"]
+[ext_resource type="Script" uid="uid://byrvvikmhvdyi" path="res://v_box_container.gd" id="8_npgcc"]
+[ext_resource type="Texture2D" uid="uid://2rrb3weec1vh" path="res://grp9WT-removebg-preview.png" id="9_qo1h4"]
+[ext_resource type="Script" uid="uid://cv4ih46tqoeer" path="res://time_label.gd" id="10_max0h"]
+[ext_resource type="Script" uid="uid://cl5h6bxd64hue" path="res://Minimap.gd" id="12_30wi5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_alg0b"]
+texture = ExtResource("1_turtx")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_30wi5"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_alg0b")
+
+[node name="Nivel3" type="Node2D" unique_id=1371816128]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1226682791]
+tile_set = SubResource("TileSet_30wi5")
+script = ExtResource("2_alg0b")
+item_scene = ExtResource("3_30wi5")
+items_per_room = 1
+enemy_scene = ExtResource("4_63hhv")
+enemy_2_scene = ExtResource("5_w66hf")
+enemies_per_room = 3
+stairs_scene = ExtResource("6_5ipfx")
+treasure_scene = ExtResource("7_turtx")
+secret_treasure_scene = ExtResource("8_alg0b")
+next_level_scene = "uid://p8mxsecpao3g"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1565686845]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1550578366]
+offset_right = 347.0
+offset_bottom = 428.0
+script = ExtResource("8_npgcc")
+
+[node name="CorazonesContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=649422114]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+
+[node name="CorazonTemplate" type="TextureRect" parent="CanvasLayer/VBoxContainer/CorazonesContainer" unique_id=124871604]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("9_qo1h4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=1414398825]
+layout_mode = 2
+
+[node name="TreasureLabel" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=45417139]
+layout_mode = 2
+
+[node name="MessageLabel" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=100054319]
+layout_mode = 2
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1968561506]
+
+[node name="LevelLabel" type="Label" parent="CanvasLayer2" unique_id=2041344469]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -53.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "Nivel 3"
+
+[node name="TimeLabel" type="Label" parent="CanvasLayer2" unique_id=1362919283]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+script = ExtResource("10_max0h")
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="." unique_id=1844695753]
+
+[node name="Control" type="Control" parent="CanvasLayer3" unique_id=737255841 node_paths=PackedStringArray("tilemap")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 25.0
+offset_top = 154.0
+offset_right = 65.0
+offset_bottom = 194.0
+script = ExtResource("12_30wi5")
+tilemap = NodePath("../../TileMapLayer")

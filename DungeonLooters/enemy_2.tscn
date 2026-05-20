@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://dw3xd8ee65x7r"]
+
+[ext_resource type="Script" uid="uid://bc35quu0tsbvb" path="res://enemy.gd" id="1_vfv5t"]
+[ext_resource type="Texture2D" uid="uid://dwx30oyldhmra" path="res://oJeuBn-removebg-preview.png" id="2_vfv5t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfv5t"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(183, 1, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_roo12"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(244, 1, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nii7r"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(305, 1, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orijv"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(366, 1, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpdht"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(427, 1, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5e66"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(488, 1, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvvu1"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(183, 304, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv4bk"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(244, 304, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qr8xe"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(305, 304, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05s6o"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(366, 304, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_anlw3"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(427, 304, 61, 101)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u64o8"]
+atlas = ExtResource("2_vfv5t")
+region = Rect2(488, 304, 61, 101)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wujgv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfv5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_roo12")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nii7r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_orijv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mpdht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5e66")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvvu1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hv4bk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qr8xe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05s6o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_anlw3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u64o8")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hb8ge"]
+radius = 29.999998
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4gyqm"]
+radius = 41.488144
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1738491334 groups=["enemies"]]
+scale = Vector2(0.1, 0.1)
+collision_layer = 2
+script = ExtResource("1_vfv5t")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=61128165]
+sprite_frames = SubResource("SpriteFrames_wujgv")
+animation = &"attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1593818768]
+position = Vector2(-10, 20)
+shape = SubResource("CircleShape2D_hb8ge")
+
+[node name="ChangeDirTimer" type="Timer" parent="." unique_id=638990452]
+wait_time = 2.0
+autostart = true
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=14475825 groups=["enemies"]]
+position = Vector2(0, 10)
+scale = Vector2(0.73414785, -0.667231)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=13967847]
+position = Vector2(-9.999999, -10)
+scale = Vector2(1.6212626, 1.6926823)
+shape = SubResource("CircleShape2D_4gyqm")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="ChangeDirTimer" to="." method="_on_change_dir_timer_timeout"]
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]

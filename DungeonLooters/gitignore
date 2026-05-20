@@ -1,0 +1,13 @@
+# Archivos e importaciones temporales de Godot
+.godot/
+.import/
+export_presets.cfg
+
+# Archivos específicos de builds/exportaciones
+android/
+build/
+
+# Configuraciones de editores de código comunes
+.mono/
+data_*/
+mono_crash_*.json

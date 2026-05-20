@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://bbudfmhur0di"]
+
+[ext_resource type="Script" uid="uid://cv4ih46tqoeer" path="res://time_label.gd" id="1_1g353"]
+[ext_resource type="Script" uid="uid://byrvvikmhvdyi" path="res://v_box_container.gd" id="1_oaeky"]
+[ext_resource type="Texture2D" uid="uid://ooyp1lerfkow" path="res://image (1).png" id="1_ug47r"]
+[ext_resource type="Texture2D" uid="uid://2rrb3weec1vh" path="res://grp9WT-removebg-preview.png" id="2_p4qdr"]
+[ext_resource type="Script" uid="uid://0ay8pqw82hky" path="res://tile_map_layer.gd" id="2_pnk7n"]
+[ext_resource type="PackedScene" uid="uid://bjad1ab3kww7f" path="res://item.tscn" id="3_1vpmn"]
+[ext_resource type="PackedScene" uid="uid://esi6x5kuw7m8" path="res://enemy_5.tscn" id="4_ug47r"]
+[ext_resource type="PackedScene" uid="uid://dw3xd8ee65x7r" path="res://enemy_2.tscn" id="5_pnk7n"]
+[ext_resource type="Script" uid="uid://bi51yh0nnowtk" path="res://escaleras.gd" id="6_1vpmn"]
+[ext_resource type="Texture2D" uid="uid://rvggrgpjlmt3" path="res://png-transparent-pixel-dungeon-sprite-stairs-owlboy-dungeon-angle-video-game-isometric-graphics-in-video-games-and-pixel-art-removebg-preview.png" id="7_rrpnc"]
+[ext_resource type="PackedScene" uid="uid://ph570c00t5x" path="res://tesoro_2.tscn" id="8_1vpmn"]
+[ext_resource type="Script" uid="uid://cl5h6bxd64hue" path="res://Minimap.gd" id="12_rrpnc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pnk7n"]
+texture = ExtResource("1_ug47r")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_1vpmn"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_pnk7n")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v22oq"]
+size = Vector2(175, 177)
+
+[sub_resource type="PackedScene" id="PackedScene_1vpmn"]
+_bundled = {
+"conn_count": 1,
+"conns": PackedInt32Array(1073741827, 1073741826, 13, 12, 2, 0, 0),
+"editable_instances": [],
+"id_paths": [PackedInt32Array(), PackedInt32Array(), PackedInt32Array(), PackedInt32Array()],
+"names": PackedStringArray("Escaleras", "Area2D", "scale", "script", "metadata/_edit_group_", "Sprite2D", "Sprite2D", "texture", "CollisionShape2D", "CollisionShape2D", "position", "shape", "_on_body_entered", "body_entered"),
+"node_count": 3,
+"node_ids": PackedInt32Array(1751491954, 1218636670, 1174021733),
+"node_paths": [NodePath("."), NodePath("."), NodePath("."), NodePath(".")],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 3, 2, 0, 3, 1, 4, 2, 0, 1073741824, 0, 6, 5, -1, 1, 7, 3, 0, 1073741825, 0, 9, 8, -1, 2, 10, 4, 11, 5, 0),
+"variants": [Vector2(0.1, 0.1), ExtResource("6_1vpmn"), true, ExtResource("7_rrpnc"), Vector2(-2.5, 7.5), SubResource("RectangleShape2D_v22oq")],
+"version": 3
+}
+
+[node name="Nivel2" type="Node2D" unique_id=1371816128]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1226682791]
+tile_set = SubResource("TileSet_1vpmn")
+script = ExtResource("2_pnk7n")
+item_scene = ExtResource("3_1vpmn")
+items_per_room = 1
+enemy_scene = ExtResource("4_ug47r")
+enemy_2_scene = ExtResource("5_pnk7n")
+enemies_per_room = 2
+stairs_scene = SubResource("PackedScene_1vpmn")
+treasure_scene = ExtResource("8_1vpmn")
+next_level_scene = "uid://dyheg4nqubhf2"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1565686845]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=1550578366]
+offset_right = 347.0
+offset_bottom = 428.0
+script = ExtResource("1_oaeky")
+
+[node name="CorazonesContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=649422114]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+
+[node name="CorazonTemplate" type="TextureRect" parent="CanvasLayer/VBoxContainer/CorazonesContainer" unique_id=124871604]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("2_p4qdr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=1414398825]
+layout_mode = 2
+
+[node name="TreasureLabel" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=45417139]
+layout_mode = 2
+
+[node name="MessageLabel" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=100054319]
+layout_mode = 2
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1968561506]
+
+[node name="LevelLabel" type="Label" parent="CanvasLayer2" unique_id=2041344469]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -53.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "Nivel 2"
+
+[node name="TimeLabel" type="Label" parent="CanvasLayer2" unique_id=1362919283]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+script = ExtResource("1_1g353")
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="." unique_id=2059831908]
+
+[node name="Control" type="Control" parent="CanvasLayer3" unique_id=960647430 node_paths=PackedStringArray("tilemap")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 25.0
+offset_top = 154.0
+offset_right = 65.0
+offset_bottom = 194.0
+script = ExtResource("12_rrpnc")
+tilemap = NodePath("../../TileMapLayer")

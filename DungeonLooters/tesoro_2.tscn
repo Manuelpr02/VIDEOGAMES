@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://ph570c00t5x"]
+
+[ext_resource type="Script" uid="uid://cyt2btrpjfbvc" path="res://tesoro.gd" id="1_m8igo"]
+[ext_resource type="Texture2D" uid="uid://5orx4wi2cx6f" path="res://Captura_de_pantalla_2026-05-12_165028-removebg-preview.png" id="2_r1uy2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8igo"]
+atlas = ExtResource("2_r1uy2")
+region = Rect2(152, 254, 152, 127)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1uy2"]
+atlas = ExtResource("2_r1uy2")
+region = Rect2(152, 127, 152, 127)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f0nqf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8igo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1uy2")
+}],
+"loop": true,
+"name": &"abrir",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2skea"]
+radius = 69.065186
+
+[node name="Tesoro" type="Area2D" unique_id=376473132]
+position = Vector2(571, 291)
+scale = Vector2(0.05, 0.05)
+script = ExtResource("1_m8igo")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2026111856]
+sprite_frames = SubResource("SpriteFrames_f0nqf")
+animation = &"abrir"
+autoplay = "abrir"
+frame = 1
+frame_progress = 0.944442
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=662581948]
+position = Vector2(2, -15)
+shape = SubResource("CircleShape2D_2skea")

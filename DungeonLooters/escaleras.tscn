@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b212eg8klup5r"]
+
+[ext_resource type="Script" uid="uid://bi51yh0nnowtk" path="res://escaleras.gd" id="1_v22oq"]
+[ext_resource type="Texture2D" uid="uid://rvggrgpjlmt3" path="res://png-transparent-pixel-dungeon-sprite-stairs-owlboy-dungeon-angle-video-game-isometric-graphics-in-video-games-and-pixel-art-removebg-preview.png" id="1_wa0ve"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v22oq"]
+size = Vector2(175, 177)
+
+[node name="Escaleras" type="Area2D" unique_id=1751491954 groups=["stairs"]]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_v22oq")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1218636670]
+texture = ExtResource("1_wa0ve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1174021733]
+position = Vector2(-2.5, 7.5)
+shape = SubResource("RectangleShape2D_v22oq")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

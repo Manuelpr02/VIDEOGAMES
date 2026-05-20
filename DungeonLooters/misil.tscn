@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://c6dpcy5qn4e1s"]
+
+[ext_resource type="Texture2D" uid="uid://bwsm11gf734fp" path="res://pngegg.png" id="1_jvlju"]
+[ext_resource type="Script" uid="uid://sdpybp1yryio" path="res://misil.gd" id="1_pjauq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjauq"]
+atlas = ExtResource("1_jvlju")
+region = Rect2(293, 586, 46, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wftj6"]
+atlas = ExtResource("1_jvlju")
+region = Rect2(339, 586, 46, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tiy7w"]
+atlas = ExtResource("1_jvlju")
+region = Rect2(385, 586, 46, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gaxn"]
+atlas = ExtResource("1_jvlju")
+region = Rect2(431, 586, 46, 52)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t1mia"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjauq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wftj6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tiy7w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gaxn")
+}],
+"loop": true,
+"name": &"disparar",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jvlju"]
+radius = 19.104973
+
+[node name="Misil" type="Area2D" unique_id=1805694599]
+scale = Vector2(0.1, 0.1)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_pjauq")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1729081038]
+sprite_frames = SubResource("SpriteFrames_t1mia")
+animation = &"disparar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=721058433]
+position = Vector2(0, 15)
+scale = Vector2(1, 0.36000013)
+shape = SubResource("CircleShape2D_jvlju")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=842770811]
+position = Vector2(0, 15)
+scale = Vector2(-2.0542283, 0.77644396)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

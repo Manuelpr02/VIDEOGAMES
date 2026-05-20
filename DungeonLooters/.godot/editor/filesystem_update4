@@ -1,0 +1,13 @@
+res://nivel_3.tscn
+res://tesoro_4.tscn
+res://tile_map_layer.gd
+res://nivel_1.tscn
+res://tesoro.gd
+res://v_box_container.gd
+res://Minimap.gd
+res://GameEvents.gd
+res://pantalla_fin_juego.tscn
+res://escaleras.gd
+res://pantalla_fin_juego.gd
+res://player.gd
+res://enemy.gd
