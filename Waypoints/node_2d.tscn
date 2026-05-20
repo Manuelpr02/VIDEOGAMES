@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cef56rqjnpnqd"]
+
+[ext_resource type="Script" uid="uid://cg73xsll1d23n" path="res://path_follow_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://bl1v1hw355fxs" path="res://icon.svg" id="1_wtcfe"]
+
+[sub_resource type="Curve2D" id="Curve2D_epypp"]
+_data = {
+"points": PackedVector2Array(-330.38245, 197.46997, 330.38245, -197.46997, 31, 639, -565.8274, -277.21747, 565.8274, 277.21747, 669, 16, 0, 0, 0, 0, 1, 12, 0, 0, 0, 0, 1148, 646, 208.86247, 75.94999, -208.86247, -75.94999, 582, 525, -322.7874, -41.77249, 322.7874, 41.77249, 1000, 61, 0, 0, 0, 0, 31, 639)
+}
+point_count = 7
+
+[node name="Node2D" type="Node2D" unique_id=1516519505]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1082849607]
+position = Vector2(577, 323)
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1164761084]
+position = Vector2(-8, 31)
+curve = SubResource("Curve2D_epypp")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=221622378]
+position = Vector2(661.6463, 377.16983)
+rotation = 0.5049492
+progress = 2857.14
+rotates = false
+script = ExtResource("1_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D" unique_id=545696836]
+rotation = 0.53872746
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_wtcfe")
