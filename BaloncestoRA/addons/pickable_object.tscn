@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b54qx4d1n4nur"]
+
+[ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="1_jtmfr"]
+[ext_resource type="Texture2D" uid="uid://boyy5ntouxqwo" path="res://istockphoto-504786909-612x612.jpg" id="2_jja8s"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_jtmfr"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_jja8s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_34bly"]
+albedo_color = Color(1, 1, 1, 0)
+albedo_texture = ExtResource("2_jja8s")
+metallic = 1.0
+
+[node name="PickableObject" unique_id=17916964 instance=ExtResource("1_jtmfr")]
+transform = Transform3D(0.087, 0, 0, 0, 0.092, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="CollisionShape3D" parent="." index="0"]
+shape = SubResource("SphereShape3D_jtmfr")
+debug_color = Color(0.7003616, 0.2766364, 1, 0.41960785)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="." index="1" unique_id=1900077628]
+mesh = SubResource("SphereMesh_jja8s")
+material = SubResource("StandardMaterial3D_34bly")

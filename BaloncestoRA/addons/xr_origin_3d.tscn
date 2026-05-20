@@ -1,0 +1,203 @@
+[gd_scene format=3 uid="uid://bid5uomj3xisa"]
+
+[ext_resource type="Script" uid="uid://bxeafaierhsdc" path="res://xr_origin_3d.gd" id="1_2h2eg"]
+[ext_resource type="PackedScene" uid="uid://b4kad2kuba1yn" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn" id="2_r0x5c"]
+[ext_resource type="PackedScene" uid="uid://l2n30mpbkdyw" path="res://addons/godot-xr-tools/hands/scenes/lowpoly/right_hand_low.tscn" id="3_6kb7t"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="3_r0x5c"]
+[ext_resource type="PackedScene" uid="uid://b54qx4d1n4nur" path="res://addons/pickable_object.tscn" id="5_6kb7t"]
+[ext_resource type="Texture2D" uid="uid://133ep3317p56" path="res://ebca1ed0f12f6c1682e8ac9854db6bdd.jpg" id="6_6fl83"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r0x5c"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_6kb7t"]
+sky_material = SubResource("ProceduralSkyMaterial_r0x5c")
+
+[sub_resource type="Environment" id="Environment_6fl83"]
+background_mode = 2
+sky = SubResource("Sky_6kb7t")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ggqy3"]
+albedo_texture = ExtResource("6_6fl83")
+metallic = 1.0
+metallic_specular = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6kb7t"]
+material = SubResource("StandardMaterial3D_ggqy3")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6fl83"]
+size = Vector3(22.39563, 0, 5.5095215)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6fl83"]
+height = 0.4
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ggqy3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6fl83"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_ggqy3"]
+material = SubResource("StandardMaterial3D_6fl83")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_13v4m"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_d66xq"]
+material = SubResource("StandardMaterial3D_13v4m")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6hhdt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6hhdt"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_6fl83"]
+material = SubResource("StandardMaterial3D_6hhdt")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1tqxi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1tqxi"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_13v4m"]
+material = SubResource("StandardMaterial3D_1tqxi")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_13v4m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d66xq"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_yomyy"]
+material = SubResource("StandardMaterial3D_d66xq")
+
+[node name="XROrigin3D" type="XROrigin3D" unique_id=1208100580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.4292374)
+script = ExtResource("1_2h2eg")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1121087230]
+environment = SubResource("Environment_6fl83")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=970787951]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, -14.886783)
+light_indirect_energy = 0.0
+shadow_enabled = true
+
+[node name="XRCamera3D" type="XRCamera3D" parent="." unique_id=2094763326]
+
+[node name="LeftHand" type="XRController3D" parent="." unique_id=740003755]
+tracker = &"left_hand"
+
+[node name="LeftHand" parent="LeftHand" unique_id=945327110 instance=ExtResource("2_r0x5c")]
+
+[node name="FunctionPickup" parent="LeftHand" unique_id=171351265 instance=ExtResource("3_r0x5c")]
+
+[node name="RightHand" type="XRController3D" parent="." unique_id=1265524658]
+tracker = &"right_hand"
+
+[node name="RightHand" parent="RightHand" unique_id=1056655308 instance=ExtResource("3_6kb7t")]
+
+[node name="FunctionPickup" parent="RightHand" unique_id=654984476 instance=ExtResource("3_r0x5c")]
+
+[node name="Suelo" type="StaticBody3D" parent="." unique_id=309951840]
+transform = Transform3D(0.015462938, 0, -0.99988055, 0, 1, 0, 0.99988055, 0, 0.015462938, 0, 0, 0)
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Suelo" unique_id=2025666705]
+transform = Transform3D(11.894277, 0, 0, 0, 1, 0, 0, 0, 12.77155, 0, -0.6862855, 0)
+mesh = SubResource("PlaneMesh_6kb7t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Suelo" unique_id=352011435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.2696724, 1.197815, -0.7200389, 0.33096218)
+shape = SubResource("BoxShape3D_6fl83")
+
+[node name="Balones" type="Node3D" parent="." unique_id=1531127419]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.311835, 0)
+
+[node name="Balon1" parent="Balones" unique_id=17916964 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.7654309, -0.7773269)
+
+[node name="Balon2" parent="Balones" unique_id=1388035793 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.47414255, 0.7654309, -0.356349)
+
+[node name="Balon3" parent="Balones" unique_id=31270000 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 1.2873726, 0.7654309, -0.7773269)
+
+[node name="Balon4" parent="Balones" unique_id=425849984 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.92774844, 0.7654309, -0.4118932)
+
+[node name="Balon5" parent="Balones" unique_id=1261248496 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.7654309, -0.38621527)
+
+[node name="Balon6" parent="Balones" unique_id=1372858684 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.4012959, 0.7654309, -0.7975266)
+
+[node name="Balon7" parent="Balones" unique_id=60839434 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.48512173, 0.7654309, -0.7773269)
+
+[node name="Balon8" parent="Balones" unique_id=1379263982 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.96602726, 0.7654309, -0.77732706)
+
+[node name="Balon9" parent="Balones" unique_id=930739918 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.92946243, 0.7654309, -0.7773269)
+
+[node name="Balon10" parent="Balones" unique_id=2129527138 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.509982, 0.7654309, 0.026925087)
+
+[node name="Balon11" parent="Balones" unique_id=1158609703 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.92946243, 0.7654309, -0.0004901886)
+
+[node name="Balon12" parent="Balones" unique_id=964038053 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.9527104, 0.7654309, -0.044011593)
+
+[node name="Balon13" parent="Balones" unique_id=1760977155 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 1.2991025, 0.7654309, -0.40622377)
+
+[node name="Balon14" parent="Balones" unique_id=1984776366 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.98703396, 0.7654309, -0.42292595)
+
+[node name="Balon15" parent="Balones" unique_id=179922795 instance=ExtResource("5_6kb7t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.61607563, 0.7654309, -0.3635192)
+
+[node name="Canasta" type="StaticBody3D" parent="." unique_id=879965653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.99657786, -0.7626624, 1.9898148)
+metadata/_edit_group_ = true
+
+[node name="Base" type="MeshInstance3D" parent="Canasta" unique_id=1393848564]
+transform = Transform3D(0.93829703, 0, 0, 0, 1, 0, 0, 0, 1, 1.1087878, 0, -5.0896673)
+mesh = SubResource("CylinderMesh_6fl83")
+
+[node name="TablaTrasera" type="CollisionShape3D" parent="Canasta" unique_id=1553447540]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.94210184, 0.7750132, -5.9725013)
+shape = SubResource("BoxShape3D_ggqy3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Canasta/TablaTrasera" unique_id=2097350822]
+transform = Transform3D(1.3531971, 0, 0, 0, 2.0103548, 0, 0, 0, 1, 0.103241205, 0.45181745, 0.46456575)
+mesh = SubResource("QuadMesh_ggqy3")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Canasta/TablaTrasera" unique_id=945039592]
+transform = Transform3D(0.69566417, 0, 0, 0, 0.6753254, 0, 0, 0, 1, 0.12137878, 0.6890876, 0.55450535)
+mesh = SubResource("QuadMesh_d66xq")
+
+[node name="TablaDelantera" type="CollisionShape3D" parent="Canasta" unique_id=573362545]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.13462703, 1.110454, 0, -4.518918)
+shape = SubResource("BoxShape3D_6hhdt")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Canasta/TablaDelantera" unique_id=122806649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08984399, 0, -0.5036087)
+mesh = SubResource("QuadMesh_6fl83")
+
+[node name="TablaLateralIzquierda" type="CollisionShape3D" parent="Canasta" unique_id=2061647912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.056864858, 0, -4.9923806)
+shape = SubResource("BoxShape3D_1tqxi")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Canasta/TablaLateralIzquierda" unique_id=498490546]
+transform = Transform3D(0.046844907, 0, -0.9989022, 0, 1, 0, 0.9989022, 0, 0.046844907, 0.52416074, 0, 0)
+mesh = SubResource("QuadMesh_13v4m")
+
+[node name="TablaLateralDerecha" type="CollisionShape3D" parent="Canasta" unique_id=4774800]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1543236, 0, -5.17511)
+shape = SubResource("BoxShape3D_13v4m")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Canasta/TablaLateralDerecha" unique_id=100039764]
+transform = Transform3D(-0.068833664, 0, 0.9976283, 0, 1, 0, -0.9976283, 0, -0.068833664, -0.5681257, 0, 0.11244285)
+mesh = SubResource("QuadMesh_yomyy")

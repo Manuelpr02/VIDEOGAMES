@@ -1,0 +1,8 @@
+MeshInstance3D
+CollisionShape3D
+StaticBody3D
+Node3D
+CSGMesh3D
+XRController3D
+XRCamera3D
+XROrigin3D
