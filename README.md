@@ -27,8 +27,8 @@
 | <img src="https://github.com/user-attachments/assets/7fdfb4a8-94f8-446f-960e-f41d16174957" width="150" /> | **Waypoints1** | Lógica de patrullaje de enemigos y navegación mediante puntos de ruta. | Godot (GDScript) | 🟧 Sin publicar |
 | <img src="https://github.com/user-attachments/assets/9daa3a85-d1a8-4201-b183-c2712cb60e6d" width="150" /> | **Waypoints2** | Sistema de navegación avanzado o pathfinding siguiendo rutas dinámicas. | Godot (GDScript) | 🟧 Sin publicar |
 | <img src="https://github.com/user-attachments/assets/5088fa1e-9ce2-49d5-82af-9db1283f1ee5" width="150" /> | **¡Soldier Hunter!** | Proyecto de acción/disparos con dinámicas de combate. | Unity (C#) | ✅ Publicado | ## 
-| <img src="" width="150" /> | **BolosRV** | Sistema de navegación avanzado o pathfinding siguiendo rutas dinámicas. | Unity (C#) | 🟧 Sin publicar |
-| <img src="https://github.com/user-attachments/assets/c3a7f391-c78d-40d3-abde-36c69140a1b1" width="150" /> | **BaloncestoRA** | Proyecto de acción/disparos con dinámicas de combate. | Godot (GDScript) | 🟧 Sin publicar |
+| <img src="https://github.com/user-attachments/assets/6c35156e-f1fc-4ba6-8931-6f074daf186f" width="150" /> | **BolosRV** | Juego de bolos en realidad virtual. | Unity (C#) | 🟧 Sin publicar |
+| <img src="https://github.com/user-attachments/assets/c3a7f391-c78d-40d3-abde-36c69140a1b1" width="150" /> | **BaloncestoRA** | Juego de bolos en realidad aumentada. | Godot (GDScript) | 🟧 Sin publicar |
 
 ---
 
@@ -56,12 +56,55 @@
 ### 🪖 ¡Soldier Hunter! (Presentado a la GameJam: IGU Spring Jam 2026)
 * **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/soldierhunter)
 
+### ☄️ Asteroids 
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/asteroids?secret=QPPmCoFmjJgJptYJD0gfyA9M)
+
+### 🚀 Asteroids 2
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/asteroids2?secret=XdGFVWHuwZOGdY9Z9a4PxreruqE)
+
+### 🚗 JuegoCoches
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/juegocoches?secret=lrC5NdDWenx1zK5oGsU0UMqaPDA)
+
+### 🌀 Laberinto 3D
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/juegocoches?secret=lrC5NdDWenx1zK5oGsU0UMqaPDA)
+
+### 🤖 MaquinaEstado1
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/maquinaestado1?secret=WaXAHyHrqGkmBRf6PM89LiSqxnI)
+
+### ⚙️ MaquinaEstado2
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/maquinaestado2?secret=yIlLEx09MNHjB7scjtSPMK5yo)
+
+### 🧠 MaquinaEstado3
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/maquinaestado3?secret=5TouybY2gZcANTlr18JGUB9rsw)
+
+### 🗺️ Mazmorra Procedural 2D
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/mazmorraprocedural2d?secret=sZ9y50X9SG02WvvXE4XH2V0To8)
+
+### 🥷 Sigilo
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/sigilo?secret=SrI6cFm1RMRJMO3ePP2CwvXCaU)
+
+### 🎯 Steering Behaviors
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/steeringbehaviors?secret=RI8YjeessO17WVjvLwWAT9d9Qg)
+
+### ⛰️ Terrain 3D
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/terrain3d?secret=Uxk0HIwemmboGQv4wdUOKMg)
+
+### 🧱 Tiles
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/tiles?secret=fZ3sCGXYMU9WmUEVsdmm97dkao)
+
+### 📍 Waypoints1
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/waypoints1?secret=EgilSdsWe1wqDqE9jtOJwBYAdc)
+
+### 🧭 Waypoints2
+* **Jugar Online:** [Link a Itch.io](https://manuelpr02.itch.io/waypoints2?secret=FEx3VGZ8JQsyAx5DjAaVV5IlPB4)
+
 ---
 
 ## 📂 Cómo probar los juegos
 1. Dale al enlace al lado de cada videojuego
 2. Dale a Run Game.
 3. Ponlo en pantalla completa para disfrutar más.
+4. En el caso de los que están en RV/RA hay que descargarlos, instalarlos y conectarles las gafas de realidad virtual y ejecutarlos
 
 ---
 
