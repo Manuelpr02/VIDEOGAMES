@@ -1,4 +1,4 @@
-<img width="105" height="83" alt="g_twdJ" src="https://github.com/user-attachments/assets/4f0f3b40-fb3d-4e8b-9c8a-51755d7b0a0f" /># 🎮 My Videogames Vault (Godot Engine)
+🎮 My Videogames Vault (Godot Engine)
 
 ¡Bienvenido a mi repositorio central de videojuegos! Aquí recopilo mis desarrollos creados con **Godot Engine**, explorando desde mecánicas clásicas hasta proyectos experimentales en 2D y 3D.
 
